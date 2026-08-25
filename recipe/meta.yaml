@@ -1,13 +1,13 @@
 {% set name = "google-cloud-compute" %}
-{% set version = "1.48.0" %}
+{% set version = "1.51.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 670efbc2c5718cb86d3e8cb618afae9fb0c1ea8769c792fb960aabe075ba9e79
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 45d95bdb065244dda61d4db3984c6684ba1fc76107fa3c7882a35a3e8b450cea
 
 build:
   noarch: python
