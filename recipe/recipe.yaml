@@ -42,6 +42,14 @@ tests:
       python_version:
         - ${{ python_min }}.*
         - "*"
+  - requirements:
+      run:
+        - pytest
+    files:
+      source:
+        - tests/
+    script:
+      - pytest tests/unit
 
 about:
   summary: Python Client for Google Cloud Compute Engine
